@@ -1,11 +1,27 @@
-import { View ,Text } from "react-native";
+import { View ,Text,StyleSheet } from "react-native";
 
 export default function Index () {
     return (
-         <View> 
-            
-            <Text  style={{ color: "red", fontSize: 40, }} >Hellow, Elon Musk!!</Text>
+        <View style={styles.container} > 
+             
+            <Text style={styles.title}>Hellow, Elon Musk!!</Text> 
         
-         </View>
-    );
+        <text> bem vindo feinando</text>
+        </View>
+    )
 }
+// vai mexer na posicao do texto, use flex 1 pra mexer diretamente na tela toda 
+const styles = StyleSheet.create({
+container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection:"column",
+},
+
+title: {
+    color: "red",
+    fontSize: 22,
+}
+})
+    
